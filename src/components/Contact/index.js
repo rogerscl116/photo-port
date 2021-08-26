@@ -12,7 +12,7 @@ function handleChange(e) {
       const isValid = validateEmail(e.target.value);
       // isValid conditional statement
     if (!isValid) {
-        setErrorMessage('Your email is invalid.');
+        setErrorMessage(`${e.target.name} is invalid.`);
       } else {
         setErrorMessage('');
       }
